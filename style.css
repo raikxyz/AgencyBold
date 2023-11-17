@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.center {
+  display: flex;
+  max-width: 1100px;
+  padding: 0 2%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+section.main {
+  background-image: url("images/bg.svg");
+  background-position: center;
+  background-size: cover;
+  min-height: 700px;
+  padding: 20px 0 80px 0;
+}
+
+.menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.itens-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.itens-menu a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  margin: 20px 10px;
+}
+
+.itens-menu a:hover {
+  border-bottom: 2px solid #ffdd33;
+}
+
+.itens-menu a.contact-btn {
+  background-color: #0f3fd3;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
+
+.itens-menu a.contact-btn:hover {
+  border: 0;
+}
+
+.mockup {
+  display: block;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.mockup h1 {
+  font-size: 50px;
+}
+
+.mockup img {
+  max-width: 100%;
+}
+
+section.brands {
+  padding: 40px 0;
+}
+
+section.brands img {
+  width: calc(100% / 5);
+}
+
+section.whyus {
+  background-color: #fbfcfe;
+  padding: 50px 0;
+}
+
+section.whyus > .center {
+  max-width: 95%;
+}
+
+section.whyus > .center > h2 {
+  font-size: 64px;
+  text-align: center;
+  width: 100%;
+}
+
+section.whyus > .center > p {
+  font-size: 14px;
+  color: #7e92ac;
+  text-align: center;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  margin-top: 50px;
+}
+
+.boxinfo {
+  box-shadow: 0px 20px 40px #2426721c;
+  width: 31%;
+  margin-right: 2%;
+  padding: 20px 35px 20px 35px;
+  border-radius: 10px;
+}
+
+.boxinfo img {
+  margin-left: -30px;
+}
+
+.boxinfo h3 {
+  font-size: 28px;
+  margin: 15px 0;
+  margin-top: -25px;
+}
+
+.boxinfo p {
+  font-size: 13px;
+  color: #7e92ac;
+  margin-bottom: 20px;
+}
+
+section.banner {
+  background-image: url("images/BANNER IMG.svg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px 10px;
+  min-height: 200px;
+  text-align: center;
+  color: white;
+}
+
+section.banner h2,
+section.banner h4 {
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+section.banner h2 {
+  font-size: 64px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+section.banner h4,
+section.banner a {
+  font-size: 20px;
+}
+
+section.banner a {
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: bold;
+  width: 332px;
+  height: 68px;
+  background: #ffdd33;
+  border-radius: 10px;
+  margin-top: 38px;
+  margin-bottom: 50px;
+  color: #0f3fd3;
+  text-decoration: none;
+  line-height: 58px;
+}
+
+section.benefits {
+  padding: 50px 0;
+}
+
+.listbenefits {
+  width: 40%;
+  margin-top: 70px;
+}
+
+.listbenefits h1 {
+  color: black;
+  font-size: 40px;
+}
+.listbenefits p {
+  color: #7e92ac;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.listbenefits span {
+  display: inline-block;
+  width: calc(100% - 70px);
+}
+
+.listbenefits img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 70px;
+}
+
+.imgbenefits {
+  width: 60%;
+}
+
+.imgbenefits img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    flex-wrap: wrap;
+  }
+
+  .boxinfo {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  section.brands > .center {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  section.brands img {
+    max-width: 300px;
+    width: 100%;
+  }
+}
