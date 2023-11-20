@@ -29,9 +29,19 @@
             <a href="">Reviews</a>
             <a class="contact-btn" href="">Contact us</a>
           </div>
+          <div class="itens-menu-mobile">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <div class="menu-mobile">
+              <a href="">Start</a>
+              <a href="">Why choose us?</a>
+              <a href="">Reviews</a>
+            </div>
+          </div>
         </div>
         <div class="mockup">
-          <h1>Promote experience to your clients</h1>
+          <div class="mocktitle">
+            <p>Promote <b>experience</b> to your clients</p>
+          </div>
           <br />
           <p>And see impressive results day after day</p>
           <br />
@@ -114,11 +124,154 @@
               crowd.</span
             >
           </p>
+          <a href="">Contact Us</a>
         </div>
         <div class="imgbenefits">
           <img src="images/IMAGEM1.png" alt="" />
         </div>
       </div>
     </section>
+    <section class="reviews">
+      <h1>Reviews</h1>
+      <div style="display: block" class="center">
+        <br />
+        <div style="max-width: 1200px" class="container-slider">
+          <div class="container-slider-single">
+            <img src="images/revA.jpg" alt="" />
+            <h3>Alice</h3>
+            <p>
+              The work of the Agency Bold was fundamental to our positioning and
+              our strategies for 2021. Together we had excellent results and our
+              customers were amazed by the quality. It was an incredible job
+              done by many hands by Uber and the Agency Bold team.
+            </p>
+            <img src="images/RATE.svg" alt="" />
+          </div>
+          <div class="container-slider-single">
+            <img src="images/revB.jpg" alt="" />
+            <h3>Bob</h3>
+            <p>
+              We owe a huge debt of gratitude to Agency Bold for their pivotal
+              role in shaping our success in 2020. The collaborative effort with
+              The North Face brought about outstanding outcomes, leaving our
+              clients thoroughly impressed with the caliber of work. The synergy
+              between The North Face and the Agency Bold team truly made it a
+              remarkable endeavor.
+            </p>
+            <img src="images/RATE.svg" alt="" />
+          </div>
+          <div class="container-slider-single">
+            <img src="images/revC.jpg" alt="" />
+            <h3>Charlie</h3>
+            <p>
+              Our journey through 2022 was immensely enriched by the
+              indispensable contributions of Agency Bold. Their partnership with
+              Amazon resulted in remarkable achievements and left a lasting
+              impression on our clients. The dedication and teamwork displayed
+              by both Amazon and Agency Bold were key elements in the success
+              story of the year.
+            </p>
+            <img src="images/RATE.svg" alt="" />
+          </div>
+          <div class="container-slider-single">
+            <img src="images/revD.jpg" alt="" />
+            <h3>Diana</h3>
+            <p>
+              Agency Bold played a pivotal role in defining our trajectory and
+              strategies for 2023. The seamless collaboration with Rappi yielded
+              exceptional results, delighting our clients with the level of
+              excellence achieved. Kudos to the entire Rappi and Agency Bold
+              team for an incredible job executed with precision and finesse.
+            </p>
+            <img src="images/RATE.svg" alt="" />
+          </div>
+          <div class="container-slider-single">
+            <img src="images/revE.jpg" alt="" />
+            <h3>Ethan</h3>
+            <p>
+              2021 was a standout year for us, thanks in no small part to the
+              remarkable efforts of Agency Bold. Teaming up with Uber, we
+              witnessed unparalleled success and received rave reviews from our
+              clients. The commitment and skill demonstrated by Uber and Agency
+              Bold underscored the high standards set for our projects.
+            </p>
+            <img src="images/RATE.svg" alt="" />
+          </div>
+          <div class="container-slider-single">
+            <img src="images/revF.jpg" alt="" />
+            <h3>Fiona</h3>
+            <p>
+              Reflecting on the achievements of 2020, it's impossible not to
+              commend the invaluable role played by Agency Bold. The
+              collaborative efforts with Farfetch resulted in a level of quality
+              that exceeded expectations. The collective dedication and
+              expertise of both Farfetch and Agency Bold made a significant
+              impact, leaving a positive and lasting impression on our clients.
+            </p>
+            <img src="images/RATE.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <h1>Enter in contact</h1>
+      <div style="max-width: 40rem" class="center">
+        <form method="post">
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <textarea placeholder="Send us a message"></textarea>
+          <input type="submit" name="action" value="Send" />
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div style="max-width: 1280px" class="center">
+        <div class="text-footer">
+          <p>raikxyz | All rights deserved</p>
+        </div>
+        <div class="itens-menu">
+          <a href="">Start</a>
+          <a href="">Why choose us?</a>
+          <a href="">Reviews</a>
+          <a class="contact-btn" href="">Contact us</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="jquery.js"></script>
+    <script src="slick.min.js"></script>
+    <script>
+      $(".container-slider").slick({
+        dots: true,
+        arrows: false,
+        speed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: false,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    </script>
+    <script>
+      var menuBtn = document.querySelector(".itens-menu-mobile i");
+      menuBtn.addEventListener("click", () => {
+        let itensMenu = document.querySelector(".menu-mobile");
+        if (itensMenu.classList.contains("show")) {
+          itensMenu.classList.remove("show");
+        } else {
+          itensMenu.classList.add("show");
+        }
+      });
+    </script>
   </body>
 </html>
