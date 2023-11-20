@@ -1,2 +1,2 @@
 # frontEnd
-A project focused on Front End to test and learn new skills
+A project focused on Front-end to test and learn new skills
