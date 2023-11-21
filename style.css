@@ -28,30 +28,30 @@ section.main {
   align-items: center;
 }
 
-.itens-menu {
+.items-menu {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.itens-menu a {
+.items-menu a {
   font-weight: bold;
   color: white;
   text-decoration: none;
   margin: 20px 10px;
 }
 
-.itens-menu a:hover {
+.items-menu a:hover {
   border-bottom: 2px solid #ffdd33;
 }
 
-.itens-menu a.contact-btn {
+.items-menu a.contact-btn {
   background-color: #0f3fd3;
   padding: 12px 20px;
   border-radius: 10px;
 }
 
-.itens-menu a.contact-btn:hover {
+.items-menu a.contact-btn:hover {
   border: 0;
 }
 
@@ -81,6 +81,10 @@ section.brands {
 
 section.brands img {
   width: calc(100% / 5);
+}
+
+img[src="/images/LOGO3.png"] {
+  opacity: 0.3;
 }
 
 section.whyus {
@@ -377,13 +381,13 @@ footer {
   line-height: 64px;
 }
 
-.itens-menu-mobile {
+.items-menu-mobile {
   width: 50%;
   text-align: right;
   display: none;
 }
 
-.itens-menu-mobile i {
+.items-menu-mobile i {
   color: white;
   font-size: 23px;
   position: relative;
@@ -392,7 +396,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .itens-menu-mobile {
+  .items-menu-mobile {
     display: block;
   }
 
@@ -420,16 +424,16 @@ footer {
     color: rgb(40, 40, 40);
   }
 
-  section.main .itens-menu {
+  section.main .items-menu {
     display: none;
   }
 
-  footer .itens-menu {
+  footer .items-menu {
     width: 100%;
     text-align: center;
   }
 
-  footer .itens-menu a {
+  footer .items-menu a {
     display: block;
     text-align: center;
   }
