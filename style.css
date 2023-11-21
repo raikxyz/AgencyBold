@@ -428,6 +428,14 @@ footer {
     display: none;
   }
 
+  section.benefits .listbenefits {
+    width: 100%;
+  }
+
+  section.benefits .imgbenefits {
+    width: 100%;
+  }
+
   footer .items-menu {
     width: 100%;
     text-align: center;
