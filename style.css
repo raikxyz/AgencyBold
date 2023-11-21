@@ -455,6 +455,7 @@ footer {
 
   .info {
     flex-wrap: wrap;
+    gap: 40px;
   }
 
   .boxinfo {
